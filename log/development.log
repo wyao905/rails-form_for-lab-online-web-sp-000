@@ -229,3 +229,17 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/school_classes" for 72.137.59.184 at 2019-11-20 20:12:56 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwvErMK1G1LjlIdHwA2Fdw2cl1qMI/+fJTYpJfUcGMirKuJfzxWKaYyxV/ZqMs6JTMDmUcuUesM1x+zPJxmDCg==", "school_class"=>{"title"=>"asdf", "room_number"=>"4"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number") VALUES (?, ?)[0m  [["title", "asdf"], ["room_number", 4]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.188.72:36822/school_classes/3
+Completed 302 Found in 8ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/school_classes/3" for 72.137.59.184 at 2019-11-20 20:12:56 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]

@@ -194,3 +194,11 @@ Completed 302 Found in 72ms (ActiveRecord: 65.3ms)
 
 
 Started GET "/school_classes/1" for 72.137.59.184 at 2019-11-20 20:05:23 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolClass Load (0.4ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+

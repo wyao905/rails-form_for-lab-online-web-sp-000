@@ -23,7 +23,7 @@ class SchoolClassesController < ApplicationController
   
   def update
     @schoolclass = SchoolClass.find(params[:id])
-    @schoolclass.save
+    @schoolclass.update(params.require(:school_class).permit(:title, :room_number))
     redirect_to school_class_path(@schoolclass)
   end
 end

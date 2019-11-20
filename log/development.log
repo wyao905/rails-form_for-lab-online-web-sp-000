@@ -202,3 +202,21 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 40ms (Views: 28.4ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/school_classes/new" for 72.137.59.184 at 2019-11-20 20:12:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 316ms (Views: 296.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/school_classes" for 72.137.59.184 at 2019-11-20 20:12:46 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwvErMK1G1LjlIdHwA2Fdw2cl1qMI/+fJTYpJfUcGMirKuJfzxWKaYyxV/ZqMs6JTMDmUcuUesM1x+zPJxmDCg==", "school_class"=>{"title"=>"asdf", "room_number"=>"asdfadsf"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number") VALUES (?, ?)[0m  [["title", "asdf"], ["room_number", 0]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.188.72:36822/school_classes/2
+Completed 302 Found in 8ms (ActiveRecord: 4.2ms)
+
+

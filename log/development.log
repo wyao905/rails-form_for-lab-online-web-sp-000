@@ -248,3 +248,12 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/school_classes/3/edit" for 72.137.59.184 at 2019-11-20 20:13:00 +0000
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/edit.html.erb within layouts/application
+  Rendered school_classes/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+

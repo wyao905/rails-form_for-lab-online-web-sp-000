@@ -257,3 +257,22 @@ Processing by SchoolClassesController#edit as HTML
 Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.2ms)
 
 
+Started PATCH "/school_classes/3" for 72.137.59.184 at 2019-11-20 20:13:03 +0000
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gnrY/A51Ahg8SS6gW6WNSyxZfr4DVtHqkqObtSea6nZaW/4PA9WTI1Ns/hHxmsa1bQUPtUThVLaCUl5f9Z9xtA==", "school_class"=>{"title"=>"asdfasdf", "room_number"=>"4"}, "commit"=>"Update School class", "id"=>"3"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.188.72:36822/school_classes/3
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/school_classes/3" for 72.137.59.184 at 2019-11-20 20:13:03 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
